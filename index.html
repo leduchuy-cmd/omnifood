@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- <head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,13 +10,13 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/animate.css" />
-    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/new_css/normalize.css" />
+    <link rel="stylesheet" href="./css/new_css/animate.css" />
+    <link rel="stylesheet" href="./css/new_css/grid.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/queries.css" />
-  </head> -->
-  <head>
+  </head>
+  <!-- <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
@@ -31,13 +31,14 @@
       type="text/css"
     />
     <title>Omnifood</title>
-  </head>
+  </head> -->
 
   <body>
     <header>
       <nav>
         <div class="row">
-          <img src="./img/lg.jpg" alt="tatto logo" class="logo" />
+          <img src="./img/logo-white.png" alt="tatto logo" class="logo" />
+          <img src="./img/logo.png" alt="Omnifood logo" class="logo-black">
           <ul class="main-nav">
             <li>
               <a href="#">Food delivery</a>
@@ -63,6 +64,8 @@
         <a class="btn btn-ghost" href="#">show me more</a>
       </div>
     </header>
+
+    <!-- FEATURE -->
     <section class="section-features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
@@ -73,7 +76,7 @@
         </p>
       </div>
       <div class="row">
-        <div class="col span_1_of_4 box">
+        <div class="col span-1-of-4 box">
           <ion-icon name="heart-outline" class="icon-big"></ion-icon>
 
           <h3>Up to 365 days/year</h3>
@@ -83,7 +86,7 @@
             flexibly if that's your style
           </p>
         </div>
-        <div class="col span_1_of_4 box">
+        <div class="col span-1-of-4 box">
           <ion-icon name="alarm-outline" class="icon-big"></ion-icon>
           <h3>Ready in 20 minutes</h3>
           <p>
@@ -92,7 +95,7 @@
             each town to ensure that you're 100% happy
           </p>
         </div>
-        <div class="col span_1_of_4 box">
+        <div class="col span-1-of-4 box">
           <ion-icon name="nutrition-outline" class="icon-big"></ion-icon>
           <h3>100% organic</h3>
           <p>
@@ -101,7 +104,7 @@
             enviroment, and it also tastes better!
           </p>
         </div>
-        <div class="col span_1_of_4 box">
+        <div class="col span-1-of-4 box">
           <ion-icon name="cart-outline" class="icon-big"></ion-icon>
           <h3>Order anything</h3>
           <p>
@@ -112,8 +115,8 @@
         </div>
       </div>
     </section>
-    <!-- MEALS -->
 
+    <!-- MEALS -->
     <section class="section-meals">
       <ul class="meals-showcase clearfix">
         <li>
@@ -182,31 +185,32 @@
       </ul>
     </section>
 
+    <!-- HOW IT WORKS -->
     <section class="section-steps">
       <div class="row">
         <h2>How it works &mdash; simple as 1, 2, 3</h2>
       </div>
-      <div class="step-content">
-        <div class="step-img">
-          <img src="./img/app-iPhone.png" alt="Omnifood app on iphone" />
+      <div class="row">
+        <div class="col span-1-of-2 steps-box">
+          <img src="./img/app-iPhone.png" alt="Omnifood app on iphone" class="app-screen"/>
         </div>
-        <div class="step-item">
-          <div class="work-step clearfix">
-            <div class="step-number">1</div>
+        <div class="col span-1-of-2 steps-box">
+          <div class="works-step clearfix">
+            <div>1</div>
             <p>
               Choose the subscription plan that best fits your needs and sign up
               today.
             </p>
           </div>
-          <div class="work-step clearfix">
-            <div class="step-number">2</div>
+          <div class="works-step clearfix">
+            <div>2</div>
             <p>
               Order your delicious meal using our mobile app or website. Or you
               can even call us!
             </p>
           </div>
-          <div class="work-step clearfix">
-            <div class="step-number">3</div>
+          <div class="works-step clearfix">
+            <div>3</div>
             <p>
               Enjoy your meal after less than 20 minutes. See you the next time!
             </p>
@@ -217,19 +221,17 @@
           <a href="#" class="btn-app"
             ><img src="./img/tai-google-play.jpg" alt="Play Store Button"
           /></a>
-          <!-- </div> -->
         </div>
       </div>
     </section>
 
     <!-- CITIES -->
-
     <section class="section-cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
       <div class="row">
-        <div class="col span_1_of_4 box">
+        <div class="col span-1-of-4 box">
           <img src="./img/lisbon-3.jpg" alt="Lisbon" />
           <h3>Lisbon</h3>
           <div class="city-feature">
@@ -245,7 +247,7 @@
             <a class="twitter" href="#">@omnifood_lx</a>
           </div>
         </div>
-        <div class="col span_1_of_4 box">
+        <div class="col span-1-of-4 box">
           <img src="./img/san-francisco.jpg" alt="San Francisco" />
           <h3>San Francisco</h3>
           <div class="city-feature">
@@ -261,7 +263,7 @@
             <a class="twitter" href="#">@omnifood_sf</a>
           </div>
         </div>
-        <div class="col span_1_of_4 box">
+        <div class="col span-1-of-4 box">
           <img src="./img/berlin.jpg" alt="Lisbon" />
           <h3>Berlin</h3>
           <div class="city-feature">
@@ -277,7 +279,7 @@
             <a class="twitter" href="#">@omnifood_berlin</a>
           </div>
         </div>
-        <div class="col span_1_of_4 box">
+        <div class="col span-1-of-4 box">
           <img src="./img/london.jpg" alt="Lisbon" />
           <h3>London</h3>
           <div class="city-feature">
@@ -295,13 +297,14 @@
         </div>
       </div>
     </section>
+
     <!-- TESTIMONIALS -->
     <section class="section-testimonials">
       <div class="row">
         <h2>Our customers can't live without us</h2>
       </div>
       <div class="row">
-        <div class="col span_1_of_3">
+        <div class="col span-1-of-3">
           <blockquote>
             Omnifood is just awwsome! I just launched a startup which leaves me
             with no time for cooking, so Omnifood is a life-saver. Now that I
@@ -311,7 +314,7 @@
             >
           </blockquote>
         </div>
-        <div class="col span_1_of_3">
+        <div class="col span-1-of-3">
           <blockquote>
             Inexpensive, healthy and great-tasting meals, delivered right to my
             home. We have lots of food delivery here in Lisbon, but no one comes
@@ -319,7 +322,7 @@
             <cite><img src="./img/customer-4.jpg" alt="" />Joana Silva</cite>
           </blockquote>
         </div>
-        <div class="col span_1_of_3">
+        <div class="col span-1-of-3">
           <blockquote>
             I was looking for a quick and easy food devivery service in San
             Franciso in the US. I tried a lot of them and ended up with
@@ -332,12 +335,12 @@
     </section>
 
     <!-- SIGN UP  -->
-    <section class="section-plan">
+    <section class="section-plans">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
       <div class="row">
-        <div class="col span_1_of_3">
+        <div class="col span-1-of-3">
           <div class="plan-box">
             <div>
               <h3>Premium</h3>
@@ -366,7 +369,7 @@
             </div>
           </div>
         </div>
-        <div class="col span_1_of_3">
+        <div class="col span-1-of-3">
           <div class="plan-box">
             <div>
               <h3>Pro</h3>
@@ -396,7 +399,7 @@
             </div>
           </div>
         </div>
-        <div class="col span_1_of_3">
+        <div class="col span-1-of-3">
           <div class="plan-box">
             <div>
               <h3>Starter</h3>
@@ -425,7 +428,8 @@
         </div>
       </div>
     </section>
-    <!-- FORM CONTACT -->
+
+    <!-- FORM -->
     <section class="section-form">
       <div class="row">
         <h2>We're happy to hear from you</h2>
@@ -433,26 +437,26 @@
       <div class="row">
         <form method="post" action="#" class="contact-form">
           <div class="row">
-            <div class="">
+            <div class="col span-1-of-3">
               <label for="name">Name</label>
             </div>
-            <div class="">
+            <div class="col span-2-of-3">
               <input type="text" name="name" id="name" placeholder="Your name" required>
             </div>
           </div>
           <div class="row">
-            <div class="">
+            <div class="col span-1-of-3">
               <label for="email">Email</label>
             </div>
-            <div class="">
+            <div class="col span-2-of-3">
               <input type="email" name="email" id="email" placeholder="Your email" required>
             </div>
           </div>
           <div class="row">
-            <div class="">
+            <div class="col span-1-of-3">
               <label for="find-us">How did you find us?</label>
             </div>
-            <div class="">
+            <div class="col span-2-of-3">
               <select name="find-us" id="find-us">
                 <option value="friends" selected>Friends</option>
                 <option value="search">Search</option>
@@ -462,27 +466,27 @@
             </div>
           </div>
           <div class="row">
-            <div class="">
+            <div class="col span-1-of-3">
               <label>Newsletter?</label>
             </div>
-            <div class="">
+            <div class="col span-2-of-3">
               <input type="checkbox" name="news" id="news" checked> Yes, please!!
             </div>
           </div>
           <div class="row">
-            <div class="">
+            <div class="col span-1-of-3">
               <label>Drop us a line?</label>
             </div>
-            <div class="">
+            <div class="col span-2-of-3">
               <textarea name="message" placeholder="Your message""></textarea>
             </div>
           </div>
           <div class="row">
-            <div class="">
+            <div class="col span-1-of-3">
               <label>&nbsp;</label>
             </div>
-            <div class="">
-              <input type="submit" value="Send it!">
+            <div class="col span-2-of-3">
+              <input type="submit" value="Send it!" />
             </div>
           </div>
         </form>
@@ -492,7 +496,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="row">
-        <div class="col span_1_of_2">
+        <div class="col span-1-of-2">
           <ul class="footer-nav">
             <li><a href="#">About us</a></li>
             <li><a href="#">Blog</a></li>
@@ -501,7 +505,7 @@
             <li><a href="#">Androi app</a></li>
           </ul>
         </div>
-        <div class="col span_1_of_2">
+        <div class="col span-1-of-2">
           <ul class="social-icons">
             <li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
             <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
@@ -512,10 +516,11 @@
       </div>
       <div class="row">
         <p>
-          copyright &copy; 2015 by Onmifood. All right
+          copyright &copy; 2022 by Onmifood. All right
         </p>
       </div>
     </footer>
+
     <!-- icon -->
     <script
       type="module"

@@ -12,7 +12,6 @@ body {
   background-color: #fff;
   color: #555;
   font-family: "Lato", "Arial", sans-serif;
-
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
@@ -33,6 +32,7 @@ body {
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
+
 .row {
   max-width: 1140px;
   margin: 0 auto;
@@ -204,19 +204,27 @@ header {
   margin-top: 20px;
   border-radius: 50%;
 }
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+/* Main nav */
 .main-nav {
   float: right;
   list-style: none;
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .main-nav li {
   display: inline-block;
+  margin-left: 40px;
 }
 .main-nav li a:link,
 .main-nav li a:visited {
   padding: 8px 0;
-  margin-left: 40px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -241,6 +249,7 @@ header {
 /* -------------------- */
 .section-meals {
   padding: 0;
+  /* margin-top: 30px; */
 }
 
 .meals-showcase {
@@ -265,10 +274,10 @@ header {
   opacity: 0.7;
   width: 100%;
   height: auto;
-  -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
+  /* -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15); */
   transform: scale(1.15);
-  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  /* -webkit-transition: -webkit-transform 0.5s, opacity 0.5s; */
   transition: transform 0.5s, opacity 0.5s;
 }
 
@@ -285,57 +294,54 @@ header {
 .section-steps {
   background-color: #f4f4f4ff;
 }
+.steps-box {
+  margin-top: 30px;
+}
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+.steps-box:last-child {
+  text-align: left;
+  padding-left: 3%;
+}
 
-.step-content {
-  display: flex;
-  margin: 0 auto;
-  padding: 0 15%;
+.app-screen {
+  width: 40%;
 }
-.step-content .step-img img {
-  width: 48%;
-  margin-left: 90%;
-  margin-top: 10%;
+
+.works-step {
+  margin-bottom: 50px;
 }
-.work-step {
-  display: flex;
-  margin-top: 20px;
-  padding-top: 10%;
-}
-.work-step .step-number {
-  margin-right: 25px;
-  height: 52px;
-  width: 65px;
+
+.works-step div {
+  color: #e67e22;
+  font-size: 150%;
+  height: 54px;
+  width: 54px;
   border: 2px solid #e67e22;
   border-radius: 50%;
-  text-align: center;
   display: inline-block;
+  text-align: center;
+  margin-right: 25px;
   float: left;
-  padding: 12px;
+  padding: 5px;
 }
-.work-step p {
-  margin-top: 8px;
-}
-.step-item {
-  margin-left: 20%;
+
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
 }
 
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
-  margin-top: 20px;
 }
-.btn-app:link,
-.btn-app:visited {
-  border: 0;
-}
-
 /* -------------------- */
 /* CITIES*/
 /* -------------------- */
-.section-cities {
-  padding: 100px 0 482px;
-}
+
 .box img {
   width: 100%;
   height: auto;
@@ -354,7 +360,6 @@ header {
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
-  padding: 130px 0 450px;
 }
 blockquote {
   padding: 2%;
@@ -388,7 +393,6 @@ cite img {
 /* -------------------- */
 .section-plan {
   background-color: #f4f4f4ff;
-  padding: 120px 0 430px;
 }
 .plan-box {
   background-color: #fff;
@@ -433,15 +437,14 @@ cite img {
 }
 
 /*-------------------------------*/
-/*----------- FORM CONTACT------- */
+/*----------- FORM------------- */
 /*-------------------------------*/
-.section-form {
-  padding-top: 80px;
-}
+
 .contact-form {
   width: 60%;
   margin: 0 auto;
 }
+
 input[type="text"],
 input[type="email"],
 select,
@@ -457,6 +460,7 @@ textarea {
 input[type="checkbox"] {
   margin: 10px 5px 10px 0;
 }
+
 *:focus {
   outline: none;
 }
