@@ -12,6 +12,7 @@ body {
   background-color: #fff;
   color: #555;
   font-family: "Lato", "Arial", sans-serif;
+
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
@@ -124,7 +125,6 @@ a:visited {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #e67e22;
-  -webkit-transition: border-bottom 0.2s, color 0.2s;
   transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -232,9 +232,47 @@ header {
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s;
 }
+
 .main-nav li a:hover,
 .main-nav li a :active {
   border-bottom: 2px solid #e67e22;
+}
+
+/* mobile navi */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i {
+  font-size: 300%;
+  color: #fff;
+}
+
+/* Sticky navi */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #fefefe;
+  z-index: 10;
+}
+.sticky .main-nav {
+  margin-top: 18px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0;
+  color: #555;
+}
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
 }
 
 /* -------------------- */
@@ -274,17 +312,13 @@ header {
   opacity: 0.7;
   width: 100%;
   height: auto;
-  /* -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15); */
+
   transform: scale(1.15);
-  /* -webkit-transition: -webkit-transform 0.5s, opacity 0.5s; */
   transition: transform 0.5s, opacity 0.5s;
 }
 
 .meal-photo img:hover {
   opacity: 1;
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
   transform: scale(1.03);
 }
 
@@ -530,4 +564,27 @@ footer p {
   color: #888;
   text-align: center;
   margin-top: 30px;
+}
+
+/* imakewebthings.com/waypoints/ */
+
+/*-------------------------------*/
+/*----------- ANIMATIONS------------ */
+/*-------------------------------*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.js--wp-4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animated {
+  opacity: 1;
 }

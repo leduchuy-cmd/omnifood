@@ -4,34 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tatoo web</title>
+    <title>Web food</title>
+
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Link google form -->
     <link
       href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic"
       rel="stylesheet"
       type="text/css"
     />
+
     <link rel="stylesheet" href="./css/new_css/normalize.css" />
     <link rel="stylesheet" href="./css/new_css/animate.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css">
     <link rel="stylesheet" href="./css/new_css/grid.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/queries.css" />
   </head>
-  <!-- <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="./css/grid.css" />
-    <link rel="stylesheet" type="text/css" href="./css/ionicons.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/queries.css" />
-    <link
-      href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <title>Omnifood</title>
-  </head> -->
 
   <body>
     <header>
@@ -39,20 +33,24 @@
         <div class="row">
           <img src="./img/logo-white.png" alt="tatto logo" class="logo" />
           <img src="./img/logo.png" alt="Omnifood logo" class="logo-black">
-          <ul class="main-nav">
+          <ul class="main-nav js--main-nav">
             <li>
-              <a href="#">Food delivery</a>
+              <a href="#features">Food delivery</a>
             </li>
             <li>
-              <a href="#">How it works</a>
+              <a href="#works">How it works</a>
             </li>
             <li>
-              <a href="#">Our cities</a>
+              <a href="#cities">Our cities</a>
             </li>
             <li>
-              <a href="#">Sign up</a>
+              <a href="#plans">Sign up</a>
             </li>
           </ul>
+
+          <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-bars bar-icon"></i></a>
+          <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-times close-icon hidden"></i></a>
+
         </div>
       </nav>
       <div class="hero-text-box">
@@ -60,13 +58,13 @@
           Goodbye junk food.<br />
           Hello super healthy meals
         </h1>
-        <a class="btn btn-full" href="#">I'm hungry</a>
-        <a class="btn btn-ghost" href="#">show me more</a>
+        <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">show me more</a>
       </div>
     </header>
 
     <!-- FEATURE -->
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -75,7 +73,7 @@
           we're really good at it, we promise!
         </p>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <ion-icon name="heart-outline" class="icon-big"></ion-icon>
 
@@ -186,13 +184,13 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="section-steps">
+    <section class="section-steps" id="works">
       <div class="row">
         <h2>How it works &mdash; simple as 1, 2, 3</h2>
       </div>
       <div class="row">
         <div class="col span-1-of-2 steps-box">
-          <img src="./img/app-iPhone.png" alt="Omnifood app on iphone" class="app-screen"/>
+          <img src="./img/app-iPhone.png" alt="Omnifood app on iphone" class="app-screen js--wp-2"/>
         </div>
         <div class="col span-1-of-2 steps-box">
           <div class="works-step clearfix">
@@ -226,11 +224,11 @@
     </section>
 
     <!-- CITIES -->
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
-      <div class="row">
+      <div class="row js--wp-3">
         <div class="col span-1-of-4 box">
           <img src="./img/lisbon-3.jpg" alt="Lisbon" />
           <h3>Lisbon</h3>
@@ -335,13 +333,13 @@
     </section>
 
     <!-- SIGN UP  -->
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--wp-4">
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$399 <span> / month</span></p>
@@ -530,5 +528,20 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+    <!-- EFFECT JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/script.js"></script>
+
+
   </body>
 </html>
